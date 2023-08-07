@@ -1,0 +1,60 @@
+.nav {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: #94b9af;
+  height: 100%;
+  width: 100%;
+  /* top: 0; */
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 100%;
+}
+
+.buttons button {
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  width: 7.5%;
+  cursor: pointer;
+  /* Ensure the button acts like a block element */
+  display: block;
+  transition: all 0.2s ease-in-out; /* Add a transition to all properties with a duration of 0.2 seconds */
+  border-radius: 10%;
+}
+.buttons button:hover {
+  background-color: #669b8c;
+  border: none;
+  transform: scale(0.9); /* Shrink the button slightly on hover */
+}
+
+.buttons button img {
+  /* Set the maximum height for the image to be the same as the button's height minus the padding */
+  max-height: 50%;
+  width: auto; /* Allow the image to resize proportionally while maintaining its aspect ratio */
+  display: block; /* Center the image horizontally within the button */
+  margin: 0 auto;
+  background-color: transparent;
+  border: none;
+}
+
+.leftButtons {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 50%;
+}
+
+.leftButtons button {
+  margin-right: 2.5%;
+}
+
+.rightButtons {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  right: 0;
+}

@@ -1,0 +1,9 @@
+<div id="drop-area">
+    <form class="my-form">
+      <p>Upload your image here</p>
+      <label for="fileElem">Upload an image:</label>
+      <input type="file" id="fileElem" accept="image/*" onchange="handleFiles(this.files)">
+    </form>
+    <progress id="progress-bar" max=100 value=0></progress>
+    <div id="gallery"></div>
+  </div>
